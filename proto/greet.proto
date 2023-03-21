@@ -1,0 +1,39 @@
+syntax="proto3";
+
+// Files will get created in thin path
+option go_package = "./proto";
+
+package greet_service;
+
+service GreetService{
+    // Unary
+    rpc SayHello(NoParam) returns (HelloResponse);
+    
+    // Server stream 
+    rpc SayHelloServerStreaming(NamesList) returns (stream HelloResponse);
+    
+    // Client stream
+    rpc SayHelloClientStreaming(stream HelloRequest) returns (MessagesLists);
+
+    // Bi-directional stream
+    rpc SayHelloBidirectionalStreaming(stream HelloRequest) returns (stream HelloResponse);
+
+}
+
+message NoParam{};
+
+message HelloRequest{
+    string name = 1;
+}
+
+message HelloResponse{
+    string message = 1 ;
+}
+
+message NamesList{
+    repeated string names = 1;
+}
+
+message MessagesLists{
+    repeated string messages = 1;
+}
