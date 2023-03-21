@@ -5,7 +5,7 @@ ref:
 - [gRPC - Quick Start](https://grpc.io/docs/languages/go/quickstart/#update-and-run-the-application)
 - [gRPC - Basics tutorial](https://grpc.io/docs/languages/go/basics/)
 
-## Simple introduce types of gRPC (4 type)
+## Simpl introduce types of gRPC (4 type)
 
 ### Unary
 - Similar to traditional API, like RESTful
