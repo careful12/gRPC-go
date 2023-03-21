@@ -26,7 +26,7 @@ ref:
 * libprotoc 3.19.4
     * [Protocol Buffer Compiler Installation - Install pre-compiled binaries (any OS)](https://grpc.io/docs/protoc-installation/#install-pre-compiled-binaries-any-os)
     * [Notes on installing GRPC development environment for Go on Windows](https://gist.github.com/jjeffery/6e3a4d18ffbe1fc715be403f6391c5f4)
-    * You can test by run `protoc --version`
+    * You can test by running `protoc --version`
     * Success
 ![](https://i.imgur.com/8ewsjSM.png)
 
